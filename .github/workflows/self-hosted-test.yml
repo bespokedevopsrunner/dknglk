@@ -27,10 +27,10 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: install ping
-        run: sudo apt-get install -y iputils-ping
+      - name: Run a one-line script
+        run: echo ARRRGHHHHHHH
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ping -c 1 10.1.4.4
+          nc 10.1.4.4 22
